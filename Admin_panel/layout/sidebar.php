@@ -31,7 +31,7 @@
         </div>
       </li>
 
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#groups" aria-expanded="true" aria-controls="groups">
           <i class="fa fa-users"></i>
           <span>Groups</span>
@@ -43,14 +43,14 @@
             <a class="collapse-item" href="?page=manage_group">Manage Groups</a>
           </div>
         </div>
-      </li>
+      </li> -->
   </li>
 
   <!-- Divider -->
-  <hr class="sidebar-divider">
+  <!-- <hr class="sidebar-divider"> -->
 
   <!-- Heading -->
-  <div class="sidebar-heading">
+  <!-- <div class="sidebar-heading">
     Stores Info
   </div>
 
@@ -109,19 +109,19 @@
           <a class="collapse-item" href="?page=store_reports">Total Store Wise</a>
         </div>
       </div>
-    </li>
+    </li> -->
 
     <!-- Divider -->
-    <hr class="sidebar-divider">
+    <!-- <hr class="sidebar-divider"> -->
 
     <!-- Heading -->
-    <div class="sidebar-heading">
+    <!-- <div class="sidebar-heading">
       Account Details
-    </div>
+    </div> -->
 
     <li class="nav-item">
 
-      <a class="nav-link" href="?page=company_info">
+      <!-- <a class="nav-link" href="?page=company_info">
         <i class="fas fa-align-justify"></i>
         <span>Company Info</span></a>
 
@@ -131,94 +131,12 @@
 
         <a class="nav-link" href="?page=setting">
           <i class="fa fa-wrench"></i>
-          <span>setting</span></a>
+          <span>setting</span></a> -->
 
           <a class="nav-link" href="?action=log_out">
             <i class="fas fa-sign-out-alt"></i>
             <span>Log Out</span></a>
     </li>
-
-  <!-- Divider -->
-  <hr class="sidebar-divider">
-
-  <!-- Heading -->
-  <div class="sidebar-heading">
-    Interface
-  </div>
-
-  <!-- Nav Item - Pages Collapse Menu -->
-  <li class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-      <i class="fas fa-fw fa-cog"></i>
-      <span>Components</span>
-    </a>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-      <div class="bg-white py-2 collapse-inner rounded">
-        <h6 class="collapse-header">Custom Components:</h6>
-        <a class="collapse-item" href="?page=buttons">Buttons</a>
-        <a class="collapse-item" href="?page=cards">Cards</a>
-      </div>
-    </div>
-  </li>
-
-  <!-- Nav Item - Utilities Collapse Menu -->
-  <li class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-      <i class="fas fa-fw fa-wrench"></i>
-      <span>Utilities</span>
-    </a>
-    <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-      <div class="bg-white py-2 collapse-inner rounded">
-        <h6 class="collapse-header">Custom Utilities:</h6>
-        <a class="collapse-item" href="?page=utilities-color">Colors</a>
-        <a class="collapse-item" href="?page=utilities-border">Borders</a>
-        <a class="collapse-item" href="?page=utilities-animation">Animations</a>
-        <a class="collapse-item" href="?page=utilities-other">Other</a>
-      </div>
-    </div>
-  </li>
-
-  <!-- Divider -->
-  <hr class="sidebar-divider">
-
-  <!-- Heading -->
-  <div class="sidebar-heading">
-    Addons
-  </div>
-
-  <!-- Nav Item - Pages Collapse Menu -->
-  <li class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-      <i class="fas fa-fw fa-folder"></i>
-      <span>Pages</span>
-    </a>
-    <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-      <div class="bg-white py-2 collapse-inner rounded">
-        <h6 class="collapse-header">Login Screens:</h6>
-        <a class="collapse-item" href="../Login_panel/login.php">Login</a>
-        <a class="collapse-item" href="../Login_panel/register.php">Register</a>
-        <a class="collapse-item" href="../Login_panel/forgot-password.php">Forgot Password</a>
-        <div class="collapse-divider"></div>
-        <h6 class="collapse-header">Other Pages:</h6>
-        <a class="collapse-item" href="?page=404">404 Page</a>
-        <a class="collapse-item" href="?page=blank">Blank Page</a>
-      </div>
-    </div>
-  </li>
-
-  <!-- Nav Item - Charts -->
-  <li class="nav-item">
-    <a class="nav-link" href="?page=charts">
-      <i class="fas fa-fw fa-chart-area"></i>
-      <span>Charts</span></a>
-  </li>
-
-  <!-- Nav Item - Tables -->
-  <li class="nav-item">
-    <a class="nav-link" href="?page=data_tables">
-      <i class="fas fa-fw fa-table"></i>
-      <span>Data Tables</span></a>
-  </li>
 
   <!-- Divider -->
   <hr class="sidebar-divider d-none d-md-block">
