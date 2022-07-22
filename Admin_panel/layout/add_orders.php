@@ -9,7 +9,7 @@ date_default_timezone_set("Asia/Dhaka");
     <div class="card-header"><h3>Orders</h3></div>
     <div class="card-body">
 
-      <form role="form" action="" method="post" class="form-horizontal">
+      <form role="form" action="" method="post" id="order_form" class="form-horizontal">
              <div class="box-body">
 
 
@@ -58,7 +58,7 @@ date_default_timezone_set("Asia/Dhaka");
                   <tbody>
                     <tr>
                       <td>
-                       <select class="form-control select_group product" style="width:100%;" required>
+                       <select class="form-control select_group product" style="width:100%;" name="product_id" required>
                            
                            <option>Select Product</option>
                            <?php
@@ -290,10 +290,41 @@ $(document).on("click",".create",function(){
   var table_id=$(".table_id").val();
   var store=$(".store").val();
 
+  var product_ids = [];
+  var qtys = [];
+  var rates = [];
+  var amounts = [];
+  let allProducts = document.querySelectorAll(".product");
+  let allQtys = document.querySelectorAll(".qty");
+  let allRates = document.querySelectorAll(".rate");
+  let allAmounts = document.querySelectorAll(".amount");
+  allProducts.forEach(function(el){
+    product_ids.push(el.value);
+    qtys.push(el.value);
+    rates.push(el.value);
+    amounts.push(el.value);
+  })
+
   $.ajax({
   url:'ajax_order.php',
   type:'post',
-  data:{'create':1,'table_id':table_id,'gross_amount':final_gross_amount,'service_charge_rate':final_service_charge_rate,'service_charge_amount':final_vat_charge_amount,'vat_charge_rate':final_vat_charge_rate,'vat_charge_amount':final_vat_charge_amount,'discount':final_discount,'net_amount':final_net_amount,'user_id':user_id,'store':store},
+  data:{
+    'create':1,
+    'table_id':table_id,
+    'gross_amount':final_gross_amount,
+    'service_charge_rate':final_service_charge_rate,
+    'service_charge_amount':final_vat_charge_amount,
+    'vat_charge_rate':final_vat_charge_rate,
+    'vat_charge_amount':final_vat_charge_amount,
+    'discount':final_discount,
+    'net_amount':final_net_amount,
+    'user_id':user_id,
+    store,
+    product_ids,
+    qtys,
+    rates,
+    amounts,
+  },
   success:function(data)
   {
     if(data)

@@ -25,20 +25,28 @@ if(isset($_POST['create']))
 	$discount=$_POST['discount'];
 	$net_amount=$_POST['net_amount'];
 	$user_id=$_POST['user_id'];
-	$store=$_POST['store'];
+	$store=1; 
 	$table_id=$_POST['table_id'];
+	$product_ids=$_POST['product_ids'];
+	$qtys=$_POST['qtys'];
+	$rates=$_POST['rates'];
+	$amounts=$_POST['amounts'];
+
 
 	$date_time=date("Y-m-d")."-".date("h-i");
 	$bill_no="TINTIN".mt_rand(100000,1000000);
 
 	if($service_charge_rate==0)
 	{
-		$add=$db->insert("orders","bill_no='$bill_no',date_time='$date_time',gross_amount='$gross_amount',vat_charge_rate='$vat_charge_rate',vat_charge_amount='$vat_charge_amount',discount='$discount',net_amount='$net_amount',user_id='$user_id',table_id='$table_id',store='$store'");
+		$add=$db->insert("orders","bill_no='$bill_no',date_time='$date_time',gross_amount='$gross_amount',vat_charge_rate='$vat_charge_rate',vat_charge_amount='$vat_charge_amount',discount='$discount',net_amount='$net_amount',user_id='$user_id',table_id='$table_id',store_id='$store'");
+		foreach($product_ids as $key => $productId){
+			$add=$db->insert("order_items","bill_no='$bill_no',product_id='$productId',qty='$qtys[$key]',rate='$rates[$key]',amount='$amounts[$key]'");
+		}
 	}
 	else
 	{
 		$service_charge_amount=$_POST['service_charge_amount'];
-		$add=$db->insert("orders","bill_no='$bill_no',date_time='$date_time',gross_amount='$gross_amount',service_charge_rate='$service_charge_rate',service_charge_amount='$service_charge_amount',vat_charge_rate='$vat_charge_rate',vat_charge_amount='$vat_charge_amount',discount='$discount',net_amount='$net_amount',user_id='$user_id',table_id='$table_id',store='$store'");
+		$add=$db->insert("orders","bill_no='$bill_no',date_time='$date_time',gross_amount='$gross_amount',service_charge_rate='$service_charge_rate',service_charge_amount='$service_charge_amount',vat_charge_rate='$vat_charge_rate',vat_charge_amount='$vat_charge_amount',discount='$discount',net_amount='$net_amount',user_id='$user_id',table_id='$table_id',store_id='$store'");
 	}
 	if($add)
 	{

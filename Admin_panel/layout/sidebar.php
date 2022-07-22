@@ -31,7 +31,7 @@
         </div>
       </li>
 
-      <!-- <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#groups" aria-expanded="true" aria-controls="groups">
           <i class="fa fa-users"></i>
           <span>Groups</span>
@@ -43,14 +43,14 @@
             <a class="collapse-item" href="?page=manage_group">Manage Groups</a>
           </div>
         </div>
-      </li> -->
+      </li>
   </li>
 
   <!-- Divider -->
-  <!-- <hr class="sidebar-divider"> -->
+  <hr class="sidebar-divider">
 
   <!-- Heading -->
-  <!-- <div class="sidebar-heading">
+  <div class="sidebar-heading">
     Stores Info
   </div>
 
@@ -96,7 +96,7 @@
         </div>
       </div>
     </li>
-
+<!-- 
     <li class="nav-item">
       <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#reports" aria-expanded="true" aria-controls="reports">
         <i class="fas fa-file-alt"></i>
@@ -112,20 +112,20 @@
     </li> -->
 
     <!-- Divider -->
-    <!-- <hr class="sidebar-divider"> -->
+    <hr class="sidebar-divider">
 
     <!-- Heading -->
-    <!-- <div class="sidebar-heading">
+    <div class="sidebar-heading">
       Account Details
-    </div> -->
+    </div>
 
     <li class="nav-item">
 
-      <!-- <a class="nav-link" href="?page=company_info">
+      <a class="nav-link" href="?page=company_info">
         <i class="fas fa-align-justify"></i>
         <span>Company Info</span></a>
 
-        <a class="nav-link" href="?page=profile">
+        <!-- <a class="nav-link" href="?page=profile">
           <i class="fas fa-id-card-alt"></i>
           <span>Profile</span></a>
 
@@ -137,6 +137,9 @@
             <i class="fas fa-sign-out-alt"></i>
             <span>Log Out</span></a>
     </li>
+
+
+
 
   <!-- Divider -->
   <hr class="sidebar-divider d-none d-md-block">

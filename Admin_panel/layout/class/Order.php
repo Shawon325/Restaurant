@@ -41,6 +41,11 @@ class Order
 		}
 	}
 
+	public function get()
+	{
+	  $data=$this->db->select_all("orders");
+	  return $data;
+	}
 }
 
 ?>
